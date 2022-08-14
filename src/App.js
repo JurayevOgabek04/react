@@ -1,23 +1,15 @@
-import logo from './logo.svg';
+import { Provite } from "./LoginPages/Provite";
+import { Public } from "./LoginPages/Public";
+import { useAuth } from "./hook/useAuth";
 import './App.css';
 
 function App() {
+  const { token } = useAuth()
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {
+        token ? <Provite /> : <Public />
+      }
     </div>
   );
 }

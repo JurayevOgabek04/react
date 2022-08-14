@@ -1,0 +1,25 @@
+.films{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(56, 54, 54);
+}
+
+.films__link{
+    color: white;
+    text-decoration: none;
+}
+
+.films__search{
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.active__link{
+    color: blue;
+    text-decoration: none;
+}
+

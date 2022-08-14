@@ -1,0 +1,47 @@
+.single{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.single__img{
+    margin-right: 50px;
+    border-radius: 10px;
+    
+}
+
+.single__inner{
+    width: 800px;
+}
+
+.single__title{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.single__overview{
+    margin-top: 20px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #494646;
+}
+
+.genres, .companies{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    margin-bottom: 30px;
+}
+
+.genres__title, .companies__title{
+    font-size: 24px;
+}
+
+.genre, .com{
+    font-size: 19px;
+}
